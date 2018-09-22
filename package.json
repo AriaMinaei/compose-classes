@@ -1,0 +1,52 @@
+{
+  "name": "compose-css-classes",
+  "version": "1.0.0",
+  "description": "A small utility function to make react components that use css modules to have extensible styles.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc ",
+    "prepublish": "npm run build"
+  },
+  "keywords": [],
+  "author": "Aria Minaei aria.minaei@gmail.com",
+  "license": "MIT",
+  "jest": {
+    "testMatch": [
+      "**/?(*.)(test).ts?(x)"
+    ],
+    "moduleNameMapper": {
+      "lodash-es": "lodash"
+    },
+    "automock": false,
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "tsx",
+      "ts",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/lib",
+      "<rootDir>/xeno"
+    ],
+    "globals": {},
+    "testURL": "http://localhost"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.11"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/lodash-es": "^4.17.1",
+    "jest": "^23.6.0",
+    "lodash": "^4.17.11",
+    "prettier": "^1.14.3",
+    "ts-jest": "^23.10.1",
+    "typescript": "^3.0.3"
+  }
+}
