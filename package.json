@@ -1,6 +1,6 @@
 {
   "name": "compose-css-classes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small utility function to make react components that use css modules to have extensible styles.",
   "main": "lib/index.js",
   "scripts": {

@@ -9,7 +9,7 @@ A small utility function to make react components that use css modules to have e
  * Foo.tsx
  **/
 import * as css from './Foo.css'
-import composeClasses from 'compose-classes'
+import composeClasses from 'compose-css-classes'
 
 type Props = {
   css?: Partial<typeof css>

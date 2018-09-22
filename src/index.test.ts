@@ -1,13 +1,13 @@
-import composeClasses from './index'
+import composeCssClasses from './index'
 
-describe('composeClasses()', () => {
+describe('composeCssClasses()', () => {
   function example(
     a: $IntentionalAny,
     b: $IntentionalAny,
     expectation: string,
   ) {
     it(`${JSON.stringify([a, b])}`, () => {
-      expect(composeClasses(a)(...b).className).toEqual(expectation)
+      expect(composeCssClasses(a)(...b).className).toEqual(expectation)
     })
   }
 

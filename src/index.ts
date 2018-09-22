@@ -11,7 +11,7 @@ type Mapping<ValidNames extends string> =
   | void
   | IArrayOfStylesToClassNames<ValidNames>
 
-const composeClasses = <
+const composeCssClasses = <
   ValidClassNames extends string,
   Base extends Record<ValidClassNames, string>
 >(
@@ -70,4 +70,4 @@ const composeClasses = <
   }
 }
 
-export default composeClasses
+export default composeCssClasses
